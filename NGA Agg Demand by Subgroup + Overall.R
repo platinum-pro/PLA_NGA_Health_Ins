@@ -165,7 +165,7 @@ create_comparison_plot <- function(data, demographic_pair, fit_results_1, fit_re
   # Add OVERALL curve FIRST (so it's in the background) - BLACK DASHED
   if(!is.null(overall_data$fit)) {
     p <- p + geom_line(data = plot_data, aes(x = x, y = overall_pred), 
-                       color = "black", linewidth = 0.6, alpha = 0.5, linetype = "dashed")
+                       color = "black", linewidth = 0.6, alpha = 1, linetype = "dashed")
   }
   
   if(nrow(data_1) > 0) {
