@@ -246,7 +246,7 @@ create_comparison_plot <- function(data, demographic_pair, fit_results_1, fit_re
                   labels = scales::comma) +
     scale_color_manual(values = colors,
                        name = "") +
-    labs(title = paste("Demand Curve Comparison:", demographic_pair$var),
+    labs(title = paste(" "),
          x = "Price (₦)",
          y = "Proportion of respondents purchasing \nat each price (%)") +
     theme_minimal() +
